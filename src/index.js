@@ -72,7 +72,7 @@ function blockScoping(n) {
 
 /** (*)
   Does the fact that account is constant mean that we can't update password?
-  Why, or why not? And if not, how could we make it so that we can't?
+  Why, or why not? And if we can, how could we make it so that we can't?
   Hint: Object property descriptors
  */
 
