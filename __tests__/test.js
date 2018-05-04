@@ -113,7 +113,7 @@ describe('Person', () => {
 });
 
 describe('sequentialPromise', () => {
-  test('a', async () => {
+  test('should resolve 3 promises in sequence and return a promise', async () => {
     const p1 = () => new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve('dude');
@@ -139,7 +139,7 @@ describe('sequentialPromise', () => {
       .toBe('dude, wheres my car is a terrible movie');
   });
 
-  test('as', async () => {
+  test('should resolve 2 promises in sequence and return a promise', async () => {
     const p1 = () => new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve('Godfather');
