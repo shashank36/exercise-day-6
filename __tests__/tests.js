@@ -29,7 +29,7 @@ describe('doubleOddNumbers', () => {
 });
 
 describe('mapFilterAndReduce', () => {
-  it(`maps over an array and filters for a length less than 5 and reduces
+  it(`maps over an array and filters firstName for a length less than 5 and reduces
     into an object with the key as the name and value as the length`, () => {
     const arr = mapFilterAndReduce([{
       firstName: 'Tony',
@@ -48,7 +48,7 @@ describe('mapFilterAndReduce', () => {
 });
 
 describe('instructor', () => {
-  test('should change this.firstname to Ram', () => {
+  test('should change this.firstName to Ram', () => {
     instructor.sayHi();
     setTimeout(() => {
       expect(instructor.firstName).toBe('Ram');
@@ -160,7 +160,7 @@ describe('templateLiterals', () => {
 });
 
 describe('html', () => {
-  test('', () => {
-    expect(callTemplateTagFunction()).toBe('The expression  5 &amp;gt; 4  is &amp;quot;true&amp;quot; &amp;  3 &amp;lt; 1  is false');
+  test('should escape ", <, >, & when tagged template is passed', () => {
+    expect(callTemplateTagFunction()).toBe('The expression 5 &amp;gt; 4 is &amp;quot;true&amp;quot; &amp; 3 &amp;lt; 1 is false');
   });
 });

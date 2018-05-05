@@ -1,6 +1,6 @@
 # ES6 questions
 
-1. What does is the value of `p3` here?
+1. What is the value of `p3` here?
 
   ```js
     let phonetic = ['sierra', 'charlie'];

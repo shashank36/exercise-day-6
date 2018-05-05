@@ -38,19 +38,19 @@ function printFullName({ first, last }) {}
 // 6 (*)
 function createStudent({ likesJavaScript, likesES2015 }) {}
 
-// placeInMiddle([1,2,6,7],[3,4,5]) (*)
+// 7 placeInMiddle([1,2,6,7],[3,4,5]) (*)
 function placeInMiddle(arr, vals) {}
 
-// (*)
+// 8 (*)
 function joinArrays(...args) {}
 
-// (*)
+// 9 (*)
 function sumEvenArgs(...args) {}
 
-// (*)
+// 10 (*)
 function bind(fn, thisArg, ...outerArgs) {}
 
-/** (*)
+/** 11 (*)
   This is a typical mistake to make in JavaScript. We create a number of
   functions in a loop, and refer to an outside variable from these functions.
   All of them will end up referring to the same variable, which ends up being
@@ -70,7 +70,7 @@ function blockScoping(n) {
 }
 /* eslint-enable no-var, vars-on-top, no-loop-func */
 
-/** (*)
+/** 12 (*)
   Does the fact that account is constant mean that we can't update password?
   Why, or why not? And if we can, how could we make it so that we can't?
   Hint: Object property descriptors
@@ -85,7 +85,7 @@ function constImmutable() {
   return account.password;
 }
 
-/* (*)
+/* 13 (*)
 Given the data in the starting code, use a TEMPLATE LITERALS to produce the
 following string. Make sure the numbers, names, and team name actually come
 from the data.
@@ -116,7 +116,7 @@ function templateLiterals() {
   return '';
 }
 
-/* (*)
+/* 14 (*)
   Write a function html() that can be used as a template string tag, and produces
   a string in which all the interpolated pieces are escaped as HTML. Use the
   supplied escapeHTML function to do the escaping.
