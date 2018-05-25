@@ -41,12 +41,13 @@ function sequentialPromise() {
 
 }
 
-// Classes (*)
+// 6 (*)
 // Implement a queue using ES6 class. See test cases for Queue
 class Queue {
 
 }
 
+// 7 (*)
 // Convert the function below to ES6 class (*)
 function Person(firstName, lastName, dateOfBirth) {
   this.firstName = firstName;
@@ -67,5 +68,3 @@ module.exports = {
   Person,
   sequentialPromise,
 };
-
-// See the questions in Udacity Promise course for MCQ.

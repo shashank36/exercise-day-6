@@ -93,8 +93,8 @@ describe('Queue', () => {
 });
 
 describe('Person', () => {
-  test('should be a class', () => {
-    expect(/class/gm.test(Person.toString())).toBe(true);
+  test('should be a class with name = Person', () => {
+    expect(/\b\s?class Person\s?{/gm.test(Person.toString())).toBe(true);
   });
 
   test('should create an object with firstName, lastName, dateOfBirth when called with new keyword', () => {
