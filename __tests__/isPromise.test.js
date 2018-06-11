@@ -1,6 +1,6 @@
 const isPromise = require('../src/isPromise');
 
-const promise = { then: () => {} };
+const promise = Promise.resolve(1);
 
 describe('calling isPromise', () => {
   describe('with a promise', () => {
