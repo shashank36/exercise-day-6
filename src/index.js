@@ -6,6 +6,7 @@ function timeout(name) {
   return setTimeout(() => `Hello ${name}`, 300);
 }
 
+
 // 2 (*)
 function sayHi(name) {
   const greeting = `Hey ${name}`;

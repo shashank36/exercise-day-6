@@ -10,8 +10,16 @@
 //     console.log(result.foo, result.bar);
 // });
 
-function promiseAllProps() {
+function promiseAllProps(obj) {
+  const arr = [];
+  const objKeys = Object.keys(obj);
+  objKeys.forEach(key => arr.push(obj[key]));
 
+  Promise.all(arr)
+    .then(values => values.reduce((acc, val, index) => {
+      acc[objKeys[index]] = val;
+      return acc;
+    }));
 }
 
 module.exports = promiseAllProps;
