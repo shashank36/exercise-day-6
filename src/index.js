@@ -5,10 +5,16 @@
 // Use arrow functions in questions 1 - 4
 
 // 1 (*)
-const tripleAndFilter = (arr) => {};
+const tripleAndFilter = (arr) => {
+  const arr2 = arr.map(val => val * 3).filter(num => num % 5 === 0);
+  return arr2;
+};
 
 // 2 (*)
-const doubleOddNumbers = (arr) => {};
+const doubleOddNumbers = (arr) => {
+  const arr2 = arr.filter(num => num % 2 !== 0).map(val => val * 2);
+  return arr2;
+};
 
 // 3 (*)
 const mapFilterAndReduce = (arr) => {};
@@ -33,10 +39,20 @@ const instructor = {
 */
 
 // 5 (*)
-function printFullName({ first, last }) {}
+const printFullName = obj => `My name is ${obj.first} ${obj.last}`;
 
 // 6 (*)
-function createStudent({ likesJavaScript, likesES2015 }) {}
+const createStudent = ({ likesJavaScript, likesES2015 }) => {
+  const { first, second } = { likesJavaScript, likesES2015 };
+  if (first && second) {
+    return 'The student likes JavaScript and ES2015';
+  } else if (first) {
+    return 'The student likes JavaScript!';
+  } else if (second) {
+    return 'The student likes ES2015!';
+  }
+  return 'The student does not like much...';
+};
 
 // 7 placeInMiddle([1,2,6,7],[3,4,5]) (*)
 function placeInMiddle(arr, vals) {}
